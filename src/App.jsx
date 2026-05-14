@@ -1,12 +1,21 @@
-import logo from "./assets/images/logo.svg"
+import Header from "./components/Header"
+import Form from "./components/Form"
+import Footer from "./components/Footer"
 
 function App() {
   
 
   return (
-    <>
-    <img src={logo} alt="logo Chef Claude" />
-    </>
+    <div className="container">
+      <div className="form-window">
+        <Header />
+        <main>
+          <Form />
+        </main>
+      </div>
+      <Footer />
+    </div>
+
   )
 }
 

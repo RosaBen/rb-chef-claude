@@ -8,3 +8,91 @@
   list-style: none;
   font-family: Inter, sans-serif;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  background-color: #e9e8e8;
+}
+
+/* layouts */
+.container {
+  width: 100%;
+  max-width: 720px;
+  margin: 2rem auto;
+}
+
+.form-window {
+  height: 290px;
+  background-color: #fbfaf9;
+  color: #141413;
+  border-radius: 1rem;
+  border: 0.25rem solid grey;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+/* header */
+
+header {
+  width: 100%;
+  max-width: 712px;
+  background-color: #fffeff;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* form */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+form input {
+  width: 400px;
+  height: 38px;
+  border-radius: 0.3rem;
+  border-color: #d1d5db;
+}
+form button {
+  background-color: #141413;
+  color: white;
+  width: 183px;
+  height: 38px;
+  border-radius: 0.3rem;
+}
+/* footer */
+
+footer {
+  text-align: center;
+  background-color: #918e9b;
+  width: 100%;
+  max-width: 720px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  position: fixed;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
