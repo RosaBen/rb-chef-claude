@@ -1,5 +1,5 @@
 import Header from "./components/Header"
-import Form from "./components/Form"
+import Main from "./components/Main"
 import Footer from "./components/Footer"
 
 function App() {
@@ -7,13 +7,9 @@ function App() {
 
   return (
     <div className="container">
-      <div className="form-window">
         <Header />
-        <main>
-          <Form />
-        </main>
-      </div>
-      <Footer />
+        <Main />
+      {/* <Footer /> */}
     </div>
 
   )
