@@ -1,7 +1,7 @@
-
+import { useState } from "react"
 
 export default function Main(){
-  const ingredients = ["Chicken", "Oregano", "Tomatoes"]
+  const [ingredients, setIngredients] = useState([])
 
   const listIngredients = ingredients.map(ingredient => {
     return (
@@ -13,7 +13,7 @@ export default function Main(){
       e.preventDefault()
     const formData = new FormData(e.currentTarget)
     const newIngredient = formData.get("ingredient")
-    ingredients.push(newIngredient)
+    setIngredients(prevList => [...prevList, newIngredient])
   }
   return(
     <main>
