@@ -22,7 +22,8 @@ export default function Main(){
       <button type="submit">+ Add ingredient</button>
     </form>
       <div className="listIngredients">
-              <h1>Ingredients on hand:</h1>
+        {listIngredients.length > 0 ? (<h1>Ingredients on hand:</h1>): "" }
+              
       <ul>
         {listIngredients}
       </ul>
