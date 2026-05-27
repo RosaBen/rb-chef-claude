@@ -9,15 +9,21 @@ export default function Main(){
     )
   })
 
-  function handleClick (e){
-      e.preventDefault()
-    const formData = new FormData(e.currentTarget)
+  // function handleClick (e){
+  //     e.preventDefault()
+  //   const formData = new FormData(e.currentTarget)
+  //   const newIngredient = formData.get("ingredient")
+  //   setIngredients(prevList => [...prevList, newIngredient])
+  // }
+
+  function addIngredient(formData){
     const newIngredient = formData.get("ingredient")
     setIngredients(prevList => [...prevList, newIngredient])
   }
   return(
     <main>
-    <form onSubmit={handleClick}>
+    {/* <form onSubmit={handleClick}> */}
+    <form action={addIngredient}>
       <input type="text" placeholder="e.g. oregano" aria-label="Add ingredient" name="ingredient"/>
       <button type="submit">+ Add ingredient</button>
     </form>

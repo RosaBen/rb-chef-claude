@@ -1,1 +1,0 @@
-const h1List = document.querySelector(".listIngredients");
