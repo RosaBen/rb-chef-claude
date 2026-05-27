@@ -15,7 +15,7 @@
   align-items: center;
 }
 body {
-  background-color: #fafaf8;
+  background-color: #76689b;
 }
 
 /* layouts */
@@ -23,6 +23,12 @@ body {
   width: 100%;
   max-width: 720px;
   margin: 2rem auto;
+}
+
+.original-state {
+  height: 250px;
+  background-color: #fafaf8;
+  border-radius: 1rem;
 }
 
 main {
@@ -39,8 +45,6 @@ main {
 /* header */
 
 header {
-  width: 100%;
-  max-width: 712px;
   background-color: #fffeff;
   height: 80px;
   display: flex;
