@@ -19,16 +19,11 @@ body {
   max-width: 720px;
   margin: 2rem auto;
   background-color: #fafaf8;
+  border-radius: 1rem;
 }
 
 .original-state {
   height: 250px;
-
-  border-radius: 1rem;
-}
-
-.collapse {
-  border-radius: 1rem;
 }
 
 main {
@@ -120,7 +115,7 @@ form button {
 
 /* list */
 
-.listIngredients h1 {
+.listIngredients h2 {
   margin-bottom: 2rem;
 }
 
