@@ -87,21 +87,11 @@ form button {
 .get-recipe-container {
   background-color: #f0efeb;
   border-radius: 0.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.get-recipe-container h3 {
-  font-size: 1.125rem;
-  margin-bottom: 1rem;
-}
-
-.get-recipe-container p {
-  color: #6b7280;
-  font-size: 0.875rem;
 }
 
 .get-recipe-container button {
@@ -113,20 +103,51 @@ form button {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 }
 
-/* list */
+/* Recipe container */
 
-.listIngredients h2 {
-  margin-bottom: 2rem;
+.suggested-recipe-container {
+  padding: 1.5rem;
 }
+/* list */
 
 .listIngredients ul {
   margin-left: 2rem;
   margin-bottom: 3rem;
 }
 
-.listIngredients ul li {
+/* typos */
+
+h2 {
+  margin-bottom: 1rem;
+  color: #141413;
+}
+
+h3 {
+  font-size: 1.125rem;
+  margin: 1rem 0;
+  color: #475467;
+}
+
+p {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: -1rem 0 0.5rem;
+}
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+ul li,
+ol li {
   line-height: 2;
   color: #475467;
+}
+
+.suggested-recipe-container ul,
+.suggested-recipe-container ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 /* footer */
 
