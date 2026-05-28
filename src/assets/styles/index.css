@@ -107,6 +107,12 @@ form button {
 .suggested-recipe-container {
   padding: 1.5rem;
 }
+
+.suggested-recipe-container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #76689b;
+}
 /* list */
 
 .listIngredients ul {
