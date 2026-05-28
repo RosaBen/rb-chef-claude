@@ -1,9 +1,9 @@
-export default function ClaudeRecipe(){
+export default function ClaudeRecipe({recipe}){
   return (
     <section>
     <h2>Chef Claude Recommends:</h2>
     <article className="suggested-recipe-container" aria-live="polite">
-      <p>test</p>
+      {recipe}
     </article>
 </section>
   )

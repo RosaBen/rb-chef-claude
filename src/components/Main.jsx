@@ -1,16 +1,18 @@
 import {useState } from "react"
 import ClaudeRecipe from "./ClaudeRecipe"
 import IngredientsList from "./IngredientsList"
+import { getRecipeFromChefClaude } from "../assets/scripts/ai";
 // import { getRecipeFromChefClaude } from "../assets/scripts/ai"
 
 
 export default function Main(){
   const mainContainer = document.querySelector(".container")
   const [ingredients, setIngredients] = useState(["all the main spices", "pasta", "ground beef", "tomato paste"])
-  const [recipeShown, setRecipeShown] = useState(false)
+  const [recipe, setRecipe] = useState("")
 
-  function toggleRecipe(){
-    setRecipeShown(prev => !prev)
+  async function getRecipe(){
+    const recipeMarkdown = await getRecipeFromChefClaude(ingredients)
+    setRecipe(recipeMarkdown)
   }
 
   function addIngredient(formData){
@@ -31,8 +33,8 @@ export default function Main(){
       />
       <button type="submit">+ Add ingredient</button>
     </form>
-    {ingredients.length > 0 ? <IngredientsList ingredients={ingredients} showRecipe={toggleRecipe}/>: null}
-    {recipeShown ? <ClaudeRecipe /> : null}
+    {ingredients.length > 0 ? <IngredientsList ingredients={ingredients} showRecipe={getRecipe}/>: null}
+    {recipe? <ClaudeRecipe recipe={recipe}/> : null}
     </main>
     </>
   )
